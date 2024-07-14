@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: solid 1px red;
+}
+body{
+    background: linear-gradient(90deg, rgb(10, 109, 202) 0%, rgb(218, 212, 200) 20%, rgb(47, 65, 221) 100%); 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header{
+    background-color: whitesmoke;
+}
+main{
+    min-height: 100vh;
+}
+footer{
+    background-color: whitesmoke;
+    margin-top: auto;
+    
+}
+.card-body{
+    background-color: #ffff87;
+    outline: solid 1px #040506;
+    border-radius: 2px;
+    
+}
+.card-text{
+    background-color: white;
+}
+
