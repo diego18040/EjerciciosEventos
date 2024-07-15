@@ -78,7 +78,7 @@ const pintarNotas = (notasArray) => {
             <div class="card mx-1 p-2">
                 <div class="card-body">
                     <h5 class="card-title text-center">${nota.titulo}</h5>
-                    <p class="card-text text-center">${nota.texto}</p>
+                    <p class="card-text  text-center">${nota.texto}</p>
                     <button class="btn btn-danger p-2 my-2" onclick="borrarNota(${nota.id})">Borrar Nota</button>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" onclick="marcarRealizada(${nota.id})" ${nota.realizada ? 'checked' : ''}>
@@ -87,6 +87,10 @@ const pintarNotas = (notasArray) => {
                 </div>
             </div>
         `;
+        if (nota.realizada) {
+            notaDiv.querySelector('.card-title').style.textDecoration = 'line-through';
+            notaDiv.querySelector('.card-text').style.textDecoration = 'line-through';
+        }
         notasContainer.appendChild(notaDiv);
     });
 }

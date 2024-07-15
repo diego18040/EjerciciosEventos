@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
-    outline: solid 1px red;
+    /*outline: solid 1px red;*/
 }
 body{
     background: linear-gradient(90deg, rgb(10, 109, 202) 0%, rgb(218, 212, 200) 20%, rgb(47, 65, 221) 100%); 
@@ -30,4 +30,3 @@ footer{
 .card-text{
     background-color: white;
 }
-
