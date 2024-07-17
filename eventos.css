@@ -4,11 +4,8 @@
     /*outline: solid 1px red;*/
 }
 body{
-    background: linear-gradient(90deg, rgb(10, 109, 202) 0%, rgb(218, 212, 200) 20%, rgb(47, 65, 221) 100%); 
-    display: flex;
-    flex-direction: column;
+    background: linear-gradient(90deg, rgb(218, 212, 200) 0%, rgb(10, 109, 202) 20%, rgb(47, 65, 221) 100%); 
     min-height: 100vh;
-
 }
 header{
     background-color: whitesmoke;
@@ -16,16 +13,18 @@ header{
 main{
     min-height: 100vh;
 }
+main h1{
+    color: whitesmoke;
+}
 footer{
     background-color: whitesmoke;
     margin-top: auto;
     
 }
 .card-body{
-    background-color: #ffff87;
+    background: linear-gradient(90deg, #414034f8 0%, #c0b64bf8 20%, #f0e003 100%);
     outline: solid 1px #040506;
     border-radius: 2px;
-    
 }
 .card-text{
     background-color: white;

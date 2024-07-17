@@ -73,9 +73,9 @@ const pintarNotas = (notasArray) => {
     }
     notasArray.forEach(nota => {
         const notaDiv = document.createElement('div');
-        notaDiv.className = 'mb-2 p-0 h-100';
+        notaDiv.className = 'col mb-3';
         notaDiv.innerHTML = `
-            <div class="card mx-1 p-2">
+            <div class="card p-2 mx-2 mb-3">
                 <div class="card-body">
                     <h5 class="card-title text-center">${nota.titulo}</h5>
                     <p class="card-text  text-center">${nota.texto}</p>
@@ -86,6 +86,7 @@ const pintarNotas = (notasArray) => {
                     </div>
                 </div>
             </div>
+          
         `;
         if (nota.realizada) {
             notaDiv.querySelector('.card-title').style.textDecoration = 'line-through';
